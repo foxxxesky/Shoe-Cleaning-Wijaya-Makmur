@@ -5,38 +5,42 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreRegisterRequest;
 use App\Http\Requests\UpdateRegisterRequest;
 use App\Models\Register;
+use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        return view('pages.login&register.register');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function login()
+    {
+        return view('pages.login&register.login');
+    }
+
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreRegisterRequest  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(StoreRegisterRequest $request)
     {
-        //
+        $validatedData = $request->validate([
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'email' => 'required|email:dns|unique:registers',
+            'no_hp' => 'required',
+            'password' => 'required|confirmed',
+            'setujukebijakan' => 'accepted'
+        ]);
+
+        $validatedData['password'] = Hash::make($validatedData['password']);
+
+        Register::create($validatedData);
+        return redirect('/Login')->with('success', 'Registrasi Berhasil Silahkan Login');
+        // dd('registered');
+        // return request()->all();
     }
 
     /**

@@ -8,7 +8,14 @@
 @section('right_content')
 <!-- Right Content -->
 <section id="grid-right">
+
     <div class="row justify-content-center p-5">
+        @if(session()->has('success'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        @endif
         <div class="col-9 pt-5">
             <h4 id="text-masuk" class="pb-4">Masuk</h4>
             <!-- Form Masuk -->
