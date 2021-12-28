@@ -29,6 +29,12 @@ body {
     font-weight: 600;
     color: #8f5bd8;
 }
+
+#userdropdown {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8f5bd8;
+}
 /* Navbar */
 
 /* Jumbotron */
@@ -49,8 +55,9 @@ body {
 }
 
 #img-jumbotron {
-    width: 500px;
-    height: 366px;
+    position: absolute;
+    width: 485px;
+    height: 390px;
 }
 
 #button-jumbotron {
@@ -73,8 +80,8 @@ body {
 }
 
 #img-layanan {
-    width: 279px;
-    height: 263px;
+    width: 259px;
+    height: 243px;
 }
 
 #item-layanan {
@@ -83,6 +90,35 @@ body {
     color: #504a4a;
 }
 /* Layanan Kami */
+
+/* Bagaimana Kami Bekerja */
+#text-carakerja {
+    font-size: 36px;
+    font-weight: 700;
+    color: #504a4a;
+}
+
+#slip-titlecarakerja,
+#slip-color-carakerja {
+    color: #8f5bd8;
+}
+
+#desc-carakerja {
+    font-size: 16px;
+    color: #504a4a;
+}
+
+#img-carakerja {
+    width: 150px;
+    height: 150px;
+}
+
+#item-carakerja {
+    font-size: 16px;
+    font-weight: 700;
+    color: #504a4a;
+}
+/* Bagaimana Kami Bekerja */
 
 /* testimoni */
 #text-testimoni {
@@ -124,6 +160,12 @@ body {
 
 #desc-tentang {
     font-size: 16px;
+    color: #504a4a;
+}
+
+#kisahkami {
+    font-size: 16px;
+    font-weight: 700;
     color: #504a4a;
 }
 /* Tentang */
@@ -174,7 +216,7 @@ body {
 }
 
 #desc-col1 {
-    font-size: 17px;
+    font-size: 14px;
     color: #ffffff;
 }
 /* Footer */

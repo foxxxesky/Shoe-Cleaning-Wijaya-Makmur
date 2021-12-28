@@ -4,6 +4,14 @@
 <!-- Jumbotron -->
 <section id="home">
     <div id="jumbotron">
+        <!-- Alert Login Admin -->
+        @if(session()->has('loginAdmin'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session('loginAdmin') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        @endif
+
         <div class="container pt-5 pb-5">
             <div class="row justify-content-around">
                 <div class="col-7">
@@ -18,6 +26,8 @@
                 </div>
             </div>
         </div>
+        <div class="pb-5"></div>
+        <div class="pb-3"></div>
     </div>
 </section>
 <!-- Jumbotron -->
@@ -29,7 +39,7 @@
         <img src="images/line.png" alt="">
     </div>
     <p class="text-center pt-2 pb-2" id="desc-layanan">Kami telah mencuci lebih dari 391,812 pasang sepatu, dan akan
-        terus bertambah...
+        terus bertambah... <br>
         Berikut jasa yang kami tawarkan</p>
     <div class="container pb-5">
         <div class="row justify-content-around">
@@ -54,6 +64,45 @@
 </section>
 <!-- Layanan Kami -->
 
+<!-- Bagaimana Kami Bekerja -->
+<section>
+    <div class="container pb-5">
+        <h4 class="text-center pt-5" id="text-carakerja">Bagaimana <span id="slip-titlecarakerja">Kami</span> Bekerja
+        </h4>
+        <div class="text-center">
+            <img src="images/line.png" alt="">
+        </div>
+        <p class="text-center pt-2 pb-2" id="desc-carakerja">Simpan uang dan waktu, dengan gratis jemput di rumah atau
+            kantor anda
+        </p>
+        <div class="row justify-content-around">
+            <div class="col-4">
+                <div class="text-center">
+                    <img id="img-carakerja" src="images/order.png" alt="">
+                </div>
+                <p class="text-center pt-3" id="item-carakerja"><span id="slip-color-carakerja">Order - </span>Choose
+                    our<br>service then order</p>
+            </div>
+            <div class="col-4">
+                <div class="text-center">
+                    <img id="img-carakerja" src="images/pickup.png" alt="">
+                </div>
+                <p class="text-center pt-3" id="item-carakerja"><span id="slip-color-carakerja">We Pickup - </span>The
+                    driver<br>picks up your shoes</p>
+            </div>
+            <div class="col-4">
+                <div class="text-center">
+                    <img id="img-carakerja" src="images/deliver.png" alt="">
+                </div>
+                <p class="text-center pt-3" id="item-carakerja"><span id="slip-color-carakerja">We Deliver - </span>Your
+                    shoes are<br>finished, ready to wear
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Bagaimana Kami Bekerja -->
+
 <!-- Testimoni -->
 <section id="testi">
     <h4 class="text-center pt-5" id="text-testimoni">Testimoni</h4>
@@ -70,7 +119,7 @@
                 <p id="desc-testimoni">“Website pembersih sepatu membantu saya dalam aktivitas sehari-hari, bahkan saya
                     dapat melakukan
                     aktivitas dengan sangat cepat, terima kasih pembersih sepatu”</p>
-                <h4 class="pt-2" id="person">Oliver Skyes</h4>
+                <h4 class="pt-2" id="person">Felicia</h4>
                 <p id="location">Bojongsoang, Bandung</p>
             </div>
         </div>
@@ -85,16 +134,14 @@
         <div class="text-center pb-3">
             <img src="images/line.png" alt="">
         </div>
-        <p class="text-center" id="desc-tentang">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sociis ut
-            velit nec lobortis eget maecenas
-            iaculis pellentesque. Sed adipiscing eget diam ut congue cursus arcu risus. Facilisis egestas faucibus
-            suspendisse auctor pellentesque ut iaculis suscipit cursus. Varius dui iaculis tristique hac orci,
-            vestibulum pretium integer. Ut maecenas odio vitae diam urna, habitasse egestas. Non sed egestas aenean odio
-            bibendum volutpat. Nisi dictumst mauris augue nisl. Nullam id aliquam vestibulum porta potenti enim amet
-            imperdiet. Volutpat id amet id ac. Varius dui iaculis tristique hac orci, vestibulum pretium integer. Ut
-            maecenas odio vitae diam urna, habitasse egestas. Non sed egestas aenean odio bibendum volutpat. Nisi
-            dictumst mauris augue nisl. Nullam id aliquam vestibulum porta potenti enim amet imperdiet. Volutpat id amet
-            id ac</p>
+        <p class="text-center" id="desc-tentang">Berawal dari mata kuliah Web Application Development, Manajemen Rantai
+            Pasok dan masalah yang ada. ShoeCleaning bertujuan untuk membantu mempermudah aktivitas orang-orang setiap
+            harinya. shoecleaning didirakan oleh 5 mahasiswa jenius syarif, hadi, ryan, mubeth dan icha yang mempunyai
+            motivasi tinggi untuk membuat perubahan disekitarnya, berharap inovasi yang dibuat dapat membantu orang
+            banyak. sehingga kedepannya dapat memotivasi mahasiswa lainnya untuk menciptakan inovasi yang lebih baik
+            lagi.</p>
+
+        <p class="text-center pt-2" id="kisahkami">Baca Kisah Kami</p>
     </div>
 </section>
 <!-- Tentang Kami -->

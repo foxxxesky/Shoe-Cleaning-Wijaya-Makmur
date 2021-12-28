@@ -10,8 +10,10 @@
             <div class="row justify-content-around">
                 <div class="col-3">
                     <h4 id="shoecleaning-footer">Shoe Celaning</h4>
-                    <p id="desc-col1" class="pt-3">Copyright 2021 ShoeCleaning
-                        Service</p>
+                    <p id="desc-col1" class="pt-3">Berharap inovasi yang dibuat dapat membantu orang
+                        banyak. sehingga kedepannya dapat memotivasi mahasiswa lainnya untuk menciptakan inovasi yang
+                        lebih baik
+                        lagi.</p>
                 </div>
                 <div class="col-3">
                     <h4 id="footer-text">Alamat</h4>
@@ -20,7 +22,7 @@
                 </div>
                 <div class="col-3">
                     <h4 id="footer-text">Hubungi Kami</h4>
-                    <p id="desc-col1" class="pt-3">+62 822 6969 9999
+                    <p id="desc-col1" class="pt-3">+62 822 6969 9999 <br>
                         shoecleaning.com</p>
                 </div>
                 <div class="col-3">
