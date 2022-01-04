@@ -19,7 +19,7 @@
                         <h4 id="text-jumbotron">Shoe Cleaning Siap Membersihkan Sepatu Anda!</h4>
                         <p id="desc-jumbotron">Percayakan sepatu kesukaan anda kepada kami!</p>
                     </div>
-                    <button id="button-jumbotron" class="btn btn-light">Bersihkan Sekarang!</button>
+                    <a id="button-jumbotron" class="btn btn-light" href="/Service">Bersihkan Sekarang!</a>
                 </div>
                 <div class="col-5">
                     <img id="img-jumbotron" src="images/char.png" alt="">

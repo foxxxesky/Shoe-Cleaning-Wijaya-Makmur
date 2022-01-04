@@ -31,3 +31,7 @@ Route::post('/Register', [RegisterController::class, 'store']);
 Route::get('/Login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/Login', [LoginController::class, 'authenticate'])->name('login-user');
 Route::post('/Logout', [LoginController::class, 'logout']);
+
+
+// Service User
+Route::get('/Service', [MainController::class, 'service'])->middleware('auth');
