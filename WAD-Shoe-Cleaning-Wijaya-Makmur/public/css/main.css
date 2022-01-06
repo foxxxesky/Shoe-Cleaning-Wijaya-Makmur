@@ -221,8 +221,12 @@ body {
 }
 /* Footer */
 
-
 /*FOR SERVICES*/
+
+#img-service {
+    width: 242px;
+    height: 353px;
+}
 
 #ServiceTitle {
     font-size: 30px;
@@ -235,12 +239,12 @@ body {
     color: #504a4a;
 }
 
-#ServiceDesc { 
+#ServiceDesc {
     font-size: 15px;
     color: #504a4a;
 }
 
-#buttonservice{
+#buttonservice {
     font-size: 15px;
     background-color: #8f5bd8;
 }

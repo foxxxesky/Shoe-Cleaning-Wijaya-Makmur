@@ -9,12 +9,12 @@ class MainController extends Controller
     // FOR USER
     public function index()
     {
-        return view('pages.home');
+        return view('pages.home', ['pages' => 'Home']);
     }
 
     public function service()
     {
-        return view('pages.user.service');
+        return view('pages.user.service', ['pages' => 'Service']);
     }
 
     public function indexAdmin()

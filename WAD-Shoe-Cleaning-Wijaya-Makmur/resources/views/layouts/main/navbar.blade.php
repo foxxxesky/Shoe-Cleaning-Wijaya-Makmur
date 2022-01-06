@@ -1,7 +1,7 @@
 <!-- Nav -->
 <nav class="navbar navbar-expand-lg" style="background-color: #8F5BD8;">
     <div class="container">
-        <a id="shoecleaning-text" class="navbar-brand" href="">SHOE CLEANING</a>
+        <a id="shoecleaning-text" class="navbar-brand" href="/Home">SHOE CLEANING</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -10,16 +10,18 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around">
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <li class="nav-item">
-                    <a id="nav-item" class="nav-link" href="#home">HOME</a>
+                    <a id="nav-item" class="nav-link" href="{{ ($pages === 'Home') ? '#home' : '/Home' }}">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a id="nav-item" class="nav-link" href="#service">SERVICES</a>
+                    <a id="nav-item" class="nav-link"
+                        href="{{ ($pages === 'Home') ? '#service' : '/Home' }}">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                    <a id="nav-item" class="nav-link" href="#about">ABOUT</a>
+                    <a id="nav-item" class="nav-link" href="{{ ($pages === 'Home') ? '#about' : '/Home' }}">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a id="nav-item" class="nav-link" href="#testi">TESTIMONIAL</a>
+                    <a id="nav-item" class="nav-link"
+                        href="{{ ($pages === 'Home') ? '#testi' : '/Home' }}">TESTIMONIAL</a>
                 </li>
 
                 @auth
