@@ -34,4 +34,4 @@ Route::post('/Logout', [LoginController::class, 'logout']);
 
 
 // Service User
-Route::get('/Service', [MainController::class, 'service'])->middleware('auth');
+Route::get('/Service', [MainController::class, 'service']);
