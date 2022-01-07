@@ -240,11 +240,18 @@ body {
 }
 
 #ServiceDesc {
-    font-size: 15px;
+    font-size: 14px;
+    color: #504a4a;
+}
+
+#jumlah {
+    font-size: 14px;
+    width: 110px;
     color: #504a4a;
 }
 
 #buttonservice {
     font-size: 15px;
     background-color: #8f5bd8;
+    color: #ffffff;
 }
