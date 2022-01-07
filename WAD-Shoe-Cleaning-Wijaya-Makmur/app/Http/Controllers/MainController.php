@@ -21,8 +21,11 @@ class MainController extends Controller
     public function standartClean(Request $request)
     {
         $user = Auth::user();
+
+        $count = $request->get('jumlah');
+        $total = $count * 30000;
         
-        return view('pages.user.standartclean', ['data' => $user], ['pages' => 'Order']);
+        return view('pages.user.standartclean', ['data' => $user], ['price' => $total, 'pages' => 'Order']);
     }
 
     public function indexAdmin()

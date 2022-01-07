@@ -7,7 +7,7 @@
             <div class="col-8">
                 <h4 id="order-title">Checkout</h4>
                 <p class="pt-3 pb-5" id="order-desc">Maksimalkan penjemputan sepatu anda dengan cepat!</p>
-                <form action="" method="post">
+                <form action="{{ route('standart-order') }}" method="post">
                     @csrf
                     <input type="hidden" name="user_id" value="{{ $data->id }}">
                     <div class="form">
@@ -41,7 +41,7 @@
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Rp</span>
                                 <input type="text" class="form-control @error('harga') is-invalid @enderror"
-                                    name="harga" value="" readonly>
+                                    name="harga" value="{{ $price }}" readonly>
                             </div>
                             @error('harga')
                             <div class="invalid-feedback">
