@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MainController extends Controller
 {
@@ -15,6 +16,13 @@ class MainController extends Controller
     public function service()
     {
         return view('pages.user.service', ['pages' => 'Service']);
+    }
+
+    public function standartClean(Request $request)
+    {
+        $user = Auth::user();
+        
+        return view('pages.user.standartclean', ['data' => $user], ['pages' => 'Order']);
     }
 
     public function indexAdmin()
