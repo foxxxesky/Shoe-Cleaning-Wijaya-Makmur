@@ -10,18 +10,18 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around">
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <li class="nav-item">
-                    <a id="nav-item" class="nav-link" href="{{ ($pages === 'Home') ? '#home' : '/Home' }}">HOME</a>
+                    <a id="nav-item" class="nav-link" href="{{ ($pages === 'Home') ? '#home' : '/Home#home' }}">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-item" class="nav-link" href="/Service">SERVICES</a>
                 </li>
                 <li class="nav-item">
                     <a id="nav-item" class="nav-link"
-                        href="{{ ($pages === 'Home') ? '#service' : '/Home' }}">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                    <a id="nav-item" class="nav-link" href="{{ ($pages === 'Home') ? '#about' : '/Home' }}">ABOUT</a>
+                        href="{{ ($pages === 'Home') ? '#about' : '/Home#about' }}">ABOUT</a>
                 </li>
                 <li class="nav-item">
                     <a id="nav-item" class="nav-link"
-                        href="{{ ($pages === 'Home') ? '#testi' : '/Home' }}">TESTIMONIAL</a>
+                        href="{{ ($pages === 'Home') ? '#testi' : '/Home#testi' }}">TESTIMONIAL</a>
                 </li>
 
                 @auth
@@ -32,8 +32,10 @@
                             {{ auth()->user()->first_name }}
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="userdropdown">
-                            <li><a class="dropdown-item" href=""><i class="bi bi-person pe-2"></i>Profile</a></li>
-                            <li><a class="dropdown-item" href=""><i class="bi bi-cart pe-2"></i>Order Saya</a></li>
+                            <li><a class="dropdown-item" href="/Profile"><i class="bi bi-person pe-2"></i>Profile</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/OrderSaya"><i class="bi bi-cart pe-2"></i>Order Saya</a>
+                            </li>
                             <li>
                                 <form action="/Logout" method="post">
                                     @csrf

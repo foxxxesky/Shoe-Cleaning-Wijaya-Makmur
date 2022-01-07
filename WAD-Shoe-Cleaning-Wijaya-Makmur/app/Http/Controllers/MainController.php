@@ -28,6 +28,11 @@ class MainController extends Controller
         return view('pages.user.standartclean', ['data' => $user], ['price' => $total, 'pages' => 'Order']);
     }
 
+    public function orderSaya()
+    {
+        return view('pages.user.ordersaya', ['pages' => 'MyOrder']);
+    }
+    
     public function indexAdmin()
     {
         return view('pages.home');
