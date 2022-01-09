@@ -70,6 +70,18 @@ class MainController extends Controller
         return view('pages.user.ordersaya', ['pages' => 'Order Saya'], compact('orders'));
     }
     
+    public function invoice(Request $request)
+    {
+        $user = Auth::user();
+
+        return view('pages.user.invoice', ['pages' => 'Invoice']);
+    }
+
+    public function profile()
+    {
+        return view('pages.user.profile', ['pages' => 'Profile']);
+    }
+    
     public function indexAdmin()
     {
         return view('pages.home');

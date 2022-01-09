@@ -34,6 +34,8 @@ Route::post('/Logout', [LoginController::class, 'logout']);
 
 // User
 Route::get('/OrderSaya', [MainController::class, 'orderSaya'])->middleware('auth');
+Route::get('/Profile', [MainController::class, 'profile'])->middleware('auth');
+Route::get('/Invoice', [MainController::class, 'invoice'])->middleware('auth');
 
 // Service User
 Route::get('/Service', [MainController::class, 'service']);
