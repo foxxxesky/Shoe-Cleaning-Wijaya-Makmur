@@ -41,7 +41,7 @@
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping">Rp</span>
                                 <input type="text" class="form-control @error('harga') is-invalid @enderror"
-                                    name="harga" value="" readonly>
+                                    name="harga" value="{{ $price }}" readonly>
                             </div>
                             @error('harga')
                             <div class="invalid-feedback">
