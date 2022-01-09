@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Order;
 use Illuminate\Support\Facades\Auth;
 
 class MainController extends Controller
@@ -37,7 +38,9 @@ class MainController extends Controller
 
     public function orderSaya()
     {
-        return view('pages.user.ordersaya', ['pages' => 'MyOrder']);
+        $orders = Order::all();
+
+        return view('pages.user.ordersaya', ['pages' => 'Order Saya'], compact('orders'));
     }
     
     public function indexAdmin()
