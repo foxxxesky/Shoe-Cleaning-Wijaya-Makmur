@@ -280,3 +280,22 @@ body {
     background-color: #8f5bd8;
     color: #ffffff;
 }
+
+/* my order */
+#cuci-button {
+    font-size: 15px;
+    background-color: #8f5bd8;
+    color: #ffffff;
+}
+
+#ordersaya-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #504a4a;
+}
+
+#ordersaya-desc {
+    font-size: 16px;
+    font-weight: 500;
+    color: #a6a4a4;
+}
