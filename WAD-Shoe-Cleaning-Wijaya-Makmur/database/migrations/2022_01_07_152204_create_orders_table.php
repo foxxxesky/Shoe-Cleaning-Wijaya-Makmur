@@ -20,7 +20,7 @@ class CreateOrdersTable extends Migration
             $table->string('nama_produk');
             $table->string('nama_pemesan');
             $table->string('no_hp');
-            $table->string('catatan')->default('-');
+            $table->string('catatan')->default('-')->nullable();
             $table->dateTime('tanggal_pickup');
             $table->string('alamat_penjemputan');
             $table->string('alamat_pengiriman');
