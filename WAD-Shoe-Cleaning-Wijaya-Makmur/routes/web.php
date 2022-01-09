@@ -37,5 +37,5 @@ Route::get('/OrderSaya', [MainController::class, 'orderSaya'])->middleware('auth
 
 // Service User
 Route::get('/Service', [MainController::class, 'service']);
-Route::get('/StandartClean', [MainController::class, 'standartClean'])->middleware('auth');
-Route::post('/StandartClean', [MainController::class, 'store'])->middleware('auth')->name('standart-order');
+Route::get('/Order', [MainController::class, 'order'])->middleware('auth');
+Route::post('/Order', [MainController::class, 'store'])->middleware('auth')->name('checkouts');

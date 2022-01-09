@@ -18,6 +18,13 @@ class MainController extends Controller
         return view('pages.user.service', ['pages' => 'Service']);
     }
 
+    public function order(Request $request)
+    {
+        $user = Auth::user();
+        
+        return view('pages.user.order', ['data' => $user], ['pages' => 'Checkouts']);
+    }
+
     public function standartClean(Request $request)
     {
         $user = Auth::user();

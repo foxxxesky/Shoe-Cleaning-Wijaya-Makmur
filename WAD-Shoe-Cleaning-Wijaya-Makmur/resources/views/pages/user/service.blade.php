@@ -15,8 +15,8 @@
                 <p class="" id='ServiceDesc'>Pembersihan bagian atas dan tengah.
                     Bagus untuk sepatu kets dengan sedikit kotoran dari penggunaan normal sehari-hari.
                     Pilihan ini tidak menghilangkan noda atau kotoran membandel yang dalam.</p>
-                <div class="">
-                    <form action="/StandartClean" method="get">
+                <div>
+                    <form action="/Order" method="get">
                         <!-- nama product -->
                         <input type="hidden" name="service" value="Standart Clean">
                         <!-- Jumlah -->
@@ -43,10 +43,22 @@
                 <h4 id='ServicePrice' class="pt-2">Rp. 40.000</h4>
                 <p class="pt-2" id='ServiceDesc'>Pembersihan mendalam pada bagian atas, tengah, dan tali.
                     Opsi ini menargetkan noda dan kotoran yang membandel.</p>
-                <div class="pt-3">
-                    <a class="btn text-light" id="buttonservice" href="/DeepClean">
-                        Pesan Sekarang
-                    </a>
+                <div>
+                    <form action="/Order" method="get">
+                        <!-- nama product -->
+                        <input type="hidden" name="service" value="Deep Clean">
+                        <!-- Jumlah -->
+                        <div class="mb-3">
+                            <label for="jumlah" id="jumlah" class="form-label">Jumlah</label>
+                            <input type="number" class="form-control" id="jumlah" name="jumlah" required>
+                        </div>
+
+                        <!-- Button -->
+                        <div>
+                            <button id="buttonservice" type="submit" class="btn">Pesan
+                                Sekarang</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -63,10 +75,22 @@
                     <h4 class="pt-2" id='ServicePrice'>Rp. 45.000</h4>
                     <p class="pt-2" id='ServiceDesc'>Clean Standard untuk sneakers dengan bahan premium seperti suede
                         dan Primeknit. Juga untuk fashion sneakers seperti Gucci, Balenciaga, DLL..</p>
-                    <div class="pt-3">
-                        <a class="btn text-light" id="buttonservice" href="/PremiumClean">
-                            Pesan Sekarang
-                        </a>
+                    <div>
+                        <form action="/Order" method="get">
+                            <!-- nama product -->
+                            <input type="hidden" name="service" value="Premium Clean">
+                            <!-- Jumlah -->
+                            <div class="mb-3">
+                                <label for="jumlah" id="jumlah" class="form-label">Jumlah</label>
+                                <input type="number" class="form-control" id="jumlah" name="jumlah" required>
+                            </div>
+
+                            <!-- Button -->
+                            <div>
+                                <button id="buttonservice" type="submit" class="btn">Pesan
+                                    Sekarang</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
@@ -79,10 +103,22 @@
                     <h4 class="pt-2" id='ServicePrice'>Rp. 50.000</h4>
                     <p class="pt-2" id='ServiceDesc'>Perhatian cermat terhadap detail, deep clean, sol dalam, sol dalam,
                         pelapis, pewangi.</p>
-                    <div class="pt-3">
-                        <a class="btn text-light" id="buttonservice" href="/WeekendClean">
-                            Pesan Sekarang
-                        </a>
+                    <div>
+                        <form action="/Order" method="get">
+                            <!-- nama product -->
+                            <input type="hidden" name="service" value="Weekend Clean">
+                            <!-- Jumlah -->
+                            <div class="mb-3">
+                                <label for="jumlah" id="jumlah" class="form-label">Jumlah</label>
+                                <input type="number" class="form-control" id="jumlah" name="jumlah" required>
+                            </div>
+
+                            <!-- Button -->
+                            <div>
+                                <button id="buttonservice" type="submit" class="btn">Pesan
+                                    Sekarang</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
