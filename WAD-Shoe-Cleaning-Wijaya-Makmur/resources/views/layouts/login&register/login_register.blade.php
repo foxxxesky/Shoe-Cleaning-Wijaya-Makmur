@@ -17,6 +17,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/login_register.css">
+    <!-- tab icon -->
+    <link rel="icon" href="images/testimoni.png">
     @yield('webtitle')
 </head>
 

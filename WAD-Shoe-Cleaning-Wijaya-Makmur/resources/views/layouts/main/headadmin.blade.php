@@ -18,5 +18,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/admin.css">
+    <!-- tab icon -->
+    <link rel="icon" href="images/testimoni.png">
     <title>SHOE CELANING ADMIN | {{ $pages }}</title>
 </head>

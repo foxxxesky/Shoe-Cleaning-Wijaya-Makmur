@@ -2,7 +2,7 @@
 
 
 @section('webtitle')
-<title>Shoe Cleaning | Login</title>
+<title>SHOE CLEANING | Login</title>
 @endsection
 
 @section('right_content')

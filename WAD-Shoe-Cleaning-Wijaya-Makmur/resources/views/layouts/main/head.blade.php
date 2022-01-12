@@ -18,5 +18,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
-    @yield('webtitle')
+    <!-- tab icon -->
+    <link rel="icon" href="images/testimoni.png">
+    <title>SHOE CELANING | {{ $pages }}</title>
 </head>
