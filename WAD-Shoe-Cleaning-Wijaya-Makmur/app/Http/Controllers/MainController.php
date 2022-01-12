@@ -118,4 +118,9 @@ class MainController extends Controller
         return view('pages.admin.finish', ['pages' => 'Pesanan Selesai'], compact('orders'));
     }
 
+    public function profileAdmin()
+    {
+        return view('pages.admin.profile', ['pages' => 'Profile']);
+    }
+
 }
