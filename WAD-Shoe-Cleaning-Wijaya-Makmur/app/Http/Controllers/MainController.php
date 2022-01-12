@@ -103,4 +103,12 @@ class MainController extends Controller
         return view('pages.admin.home', ['pages' => 'Home'], compact('orders'));
     }
 
+    public function orderDetail(Request $request)
+    {
+        $id = $request->get('id');
+        $orders = Order::find($id);
+
+        return view('pages.admin.orderdetail', ['pages' => 'Order Detail'], compact('orders'));
+    }
+
 }
