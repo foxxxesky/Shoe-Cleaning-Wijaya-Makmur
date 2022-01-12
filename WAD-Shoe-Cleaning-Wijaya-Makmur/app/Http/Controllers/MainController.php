@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Order;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class MainController extends Controller
 {
@@ -97,6 +98,9 @@ class MainController extends Controller
     
     public function indexAdmin()
     {
-        return view('pages.home');
+        $orders = DB::table('orders')->where('status_cucian', '!=', 'Selesai')->orderBy('created_at', 'asc')->get();
+
+        return view('pages.admin.home', ['pages' => 'Home'], compact('orders'));
     }
+
 }

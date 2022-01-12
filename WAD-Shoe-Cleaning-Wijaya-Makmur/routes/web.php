@@ -22,6 +22,11 @@ Route::get('/Home', [MainController::class, 'index']);
 
 // Admin
 Route::get('/HomeAdmin', [MainController::class, 'indexAdmin'])->middleware('is_admin');
+Route::get('/OrderDetail', [MainController::class, 'orderDetail'])->middleware('is_admin');
+Route::post('/UpdateOrder/{id}', [MainController::class, 'updateOrder'])->name('updateOrder')->middleware('is_admin');
+Route::get('/DataSelesai', [MainController::class, 'selesai'])->middleware('is_admin');
+Route::get('/FinishDetail', [MainController::class, 'finishDetail'])->middleware('is_admin');
+Route::get('/ProfileAdmin', [MainController::class, 'profileAdmin'])->middleware('is_admin');
 
 // Register
 Route::get('/Register', [RegisterController::class, 'index'])->middleware('guest');

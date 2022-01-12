@@ -1,0 +1,66 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+#shoecleaning-text {
+    font-family: "Londrina Solid", cursive;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+#nav-item {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#login-button {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8f5bd8;
+}
+
+#userdropdown {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8f5bd8;
+}
+/* Navbar */
+
+
+/* Footer */
+#footer {
+    background: #8f5bd8;
+}
+
+#shoecleaning-footer {
+    font-family: "Londrina Solid", cursive;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#desc-col1 {
+    font-size: 17px;
+}
+
+#footer-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#desc-col1 {
+    font-size: 14px;
+    color: #ffffff;
+}
+/* Footer */
