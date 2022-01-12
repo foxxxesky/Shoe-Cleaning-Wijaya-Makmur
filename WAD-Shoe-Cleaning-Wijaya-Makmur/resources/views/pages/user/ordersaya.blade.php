@@ -48,7 +48,9 @@
                                 <button class="btn btn-warning" type="submit" id="detail-button">Detail</button>
                             </form>
                         </td>
-                        <td class="text-center align-middle" id="table-item">{{ $order->created_at }}</td>
+                        <td class="text-center align-middle" id="table-item">
+                            {{ date('d-M-Y', strtotime($order->created_at)) }}
+                        </td>
                         <td class="text-end align-middle" id="table-item">{{ $order->status_cucian }}</td>
                     </tr>
                     @endforeach
