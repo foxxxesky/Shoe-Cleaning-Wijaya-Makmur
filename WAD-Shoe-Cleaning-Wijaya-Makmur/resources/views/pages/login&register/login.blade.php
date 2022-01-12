@@ -61,13 +61,6 @@
                     <div class="mb-4">
                         <button id="login-button" type="submit" name="Masuk" class="btn btn-primary">Masuk</button>
                     </div>
-
-                    <!-- Remember Me -->
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" class="form-check-input" name="remember">
-                        <label id="checkbox-text-login" class="form-check-label" for="remember">Remember
-                            Me</label>
-                    </div>
                 </div>
             </form>
             <div class="mb-4">
