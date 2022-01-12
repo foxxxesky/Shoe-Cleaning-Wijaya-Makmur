@@ -111,6 +111,15 @@ class MainController extends Controller
         return view('pages.admin.orderdetail', ['pages' => 'Order Detail'], compact('orders'));
     }
 
+    public function updateOrder(Request $request, $id)
+    {
+        $data = Order::find($id);
+        $data->status_cucian = $request->status_cucian;
+        $data->save();
+
+        return redirect('/HomeAdmin')->with('success', 'Data Order Berhasil Diupdate!');
+    }
+
     public function selesai()
     {
         $orders = DB::table('orders')->where('status_cucian', '=', 'Selesai')->orderBy('created_at', 'asc')->get();
