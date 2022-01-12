@@ -38,7 +38,7 @@
     <div class="text-center">
         <img src="images/line.png" alt="">
     </div>
-    <p class="text-center pt-2 pb-2" id="desc-layanan">Kami telah mencuci lebih dari 391,812 pasang sepatu, dan akan
+    <p class="text-center pt-2 pb-2" id="desc-layanan">Kami telah mencuci lebih dari 1000 pasang sepatu, dan akan
         terus bertambah... <br>
         Berikut jasa yang kami tawarkan</p>
     <div class="container pb-5">
