@@ -221,7 +221,7 @@ body {
 }
 /* Footer */
 
-/*FOR SERVICES*/
+/* /FOR SERVICES/ */
 
 #img-service {
     width: 242px;
@@ -281,7 +281,14 @@ body {
     color: #ffffff;
 }
 
-/* my order */
+/* Profile */
+#profile-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #504a4a;
+}
+
+/* MyOrder */
 #cuci-button {
     font-size: 15px;
     background-color: #8f5bd8;
@@ -298,4 +305,63 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: #a6a4a4;
+}
+
+#table-head {
+    font-size: 18px;
+    font-weight: 700;
+    color: #504a4a;
+}
+
+#table-item {
+    font-size: 18px;
+    font-weight: 500;
+    color: #504a4a;
+}
+
+#detail-button {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Invoice */
+#invoice-title {
+    font-family: "Londrina Solid", cursive;
+    font-size: 36px;
+    color: #8f5bd8;
+}
+
+#span-invoice {
+    font-size: 18px;
+    font-weight: 500;
+    color: #a6a4a4;
+}
+
+#table-left {
+    font-size: 18px;
+    font-weight: 500;
+    color: #a6a4a4;
+}
+
+#table-right {
+    font-size: 18px;
+    font-weight: 500;
+    color: #504a4a;
+}
+
+#kasir {
+    font-size: 18px;
+    font-weight: 500;
+    color: #504a4a;
+}
+
+#bottom-text-invoice {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a6a4a4;
+}
+
+#span-bottom-invoice {
+    color: #8f5bd8;
 }
