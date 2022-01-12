@@ -136,7 +136,7 @@
         </div>
         <p class="text-center" id="desc-tentang">Berawal dari mata kuliah Web Application Development, Manajemen Rantai
             Pasok dan masalah yang ada. ShoeCleaning bertujuan untuk membantu mempermudah aktivitas orang-orang setiap
-            harinya. shoecleaning didirakan oleh 6 mahasiswa jenius syarif, hadi, ryan, mubeth, harun dan icha yang mempunyai
+            harinya. shoecleaning didirikan oleh 6 mahasiswa jenius syarif, hadi, ryan, mubeth, harun dan icha yang mempunyai
             motivasi tinggi untuk membuat perubahan disekitarnya, berharap inovasi yang dibuat dapat membantu orang
             banyak. sehingga kedepannya dapat memotivasi mahasiswa lainnya untuk menciptakan inovasi yang lebih baik
             lagi.</p>
