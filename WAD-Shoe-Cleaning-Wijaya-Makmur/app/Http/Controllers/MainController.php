@@ -111,4 +111,11 @@ class MainController extends Controller
         return view('pages.admin.orderdetail', ['pages' => 'Order Detail'], compact('orders'));
     }
 
+    public function selesai()
+    {
+        $orders = DB::table('orders')->where('status_cucian', '=', 'Selesai')->orderBy('created_at', 'asc')->get();
+
+        return view('pages.admin.finish', ['pages' => 'Pesanan Selesai'], compact('orders'));
+    }
+
 }
