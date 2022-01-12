@@ -124,23 +124,12 @@
                         @enderror
                     </div>
 
-                    <!-- checkbox alert -->
-                    <!-- <p class="text-warning" id="alert"></p> -->
-
                     <!-- Button -->
                     <div class="pb-3">
                         <button id="register-button" type="submit" name="Masuk" class="btn btn-primary"
                             style="width: 10rem;">Buat
                             Akun</button>
                     </div>
-
-                    <!-- <script>
-                    function checkbox() {
-                        document.getElementById("register-button").required = true;
-                        document.getElementById("alert").innerHTML =
-                            "The required property was set. The checkbox must now be checked before submitting the form.";
-                    }
-                    </script> -->
 
                     <div>
                         <p id="link-text-login">Sudah punya akun? <a id="link-page" href="/Login">Masuk</a></p>
