@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Order;
+use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -66,11 +67,13 @@ class MainController extends Controller
 
     public function orderSaya()
     {
-        $orders = Order::all();
+        $user = Auth::user();
+        $id = $user->id;
+        $orders = DB::table('orders')->where('user_id', '=', $id)->orderBy('created_at', 'asc')->get();
 
         return view('pages.user.ordersaya', ['pages' => 'Order Saya'], compact('orders'));
     }
-    
+
     public function invoice(Request $request)
     {
         $id = $request->get('id');
@@ -95,14 +98,15 @@ class MainController extends Controller
     {
         return view('pages.user.profile', ['pages' => 'Profile']);
     }
-    
+
+
     public function indexAdmin()
     {
         $orders = DB::table('orders')->where('status_cucian', '!=', 'Selesai')->orderBy('created_at', 'asc')->get();
 
         return view('pages.admin.home', ['pages' => 'Home'], compact('orders'));
     }
-
+    
     public function orderDetail(Request $request)
     {
         $id = $request->get('id');
@@ -139,5 +143,4 @@ class MainController extends Controller
     {
         return view('pages.admin.profile', ['pages' => 'Profile']);
     }
-
 }

@@ -28,6 +28,7 @@ Route::get('/DataSelesai', [MainController::class, 'selesai'])->middleware('is_a
 Route::get('/FinishDetail', [MainController::class, 'finishDetail'])->middleware('is_admin');
 Route::get('/ProfileAdmin', [MainController::class, 'profileAdmin'])->middleware('is_admin');
 
+
 // Register
 Route::get('/Register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/Register', [RegisterController::class, 'store']);
