@@ -29,7 +29,7 @@ class CreateOrdersTable extends Migration
             $table->string('harga');
             $table->string('status_pembayaran')->default('Lunas');
             $table->string('status_cucian')->default('waiting respone');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
         });
     }
 
