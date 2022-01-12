@@ -10,18 +10,18 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around">
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <li class="nav-item">
-                    <a id="nav-item" class="nav-link" href="{{ ($pages ?? '' === 'Home') ? '#home' : '/Home#home' }}">HOME</a>
+                    <a id="nav-item" class="nav-link" href="{{ ($pages === 'Home') ? '#home' : '/Home#home' }}">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a id="nav-item" class="nav-link" href="/Service">SERVICES</a>
                 </li>
                 <li class="nav-item">
                     <a id="nav-item" class="nav-link"
-                        href="{{ ($pages ?? '' === 'Home') ? '#about' : '/Home#about' }}">ABOUT</a>
+                        href="{{ ($pages === 'Home') ? '#about' : '/Home#about' }}">ABOUT</a>
                 </li>
                 <li class="nav-item">
                     <a id="nav-item" class="nav-link"
-                        href="{{ ($pages ?? '' === 'Home') ? '#testi' : '/Home#testi' }}">TESTIMONIAL</a>
+                        href="{{ ($pages === 'Home') ? '#testi' : '/Home#testi' }}">TESTIMONIAL</a>
                 </li>
 
                 @auth
