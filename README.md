@@ -1,11 +1,21 @@
-# WAD-Shoe-Cleaning-Wijaya-Makmur
-Tugas Besar Web Application Development
+# Tugas Besar Web Application Development
+## Shoe Cleaning Website
+## Kelompok Wijaya Makmur
 
-How to Clonning Macbook
+| Nama | Role |
+| --- | --- |
+| Syariif Abdurrahman Bathik | Project Manager |
+| Ryandi Yorsinda Anggoro | UI/UX Designer |
+| Mubeth Praditya | Web Developer |
+| Hasrinaldi Hasniman Harun | System Analyst |
+| Luh Putu Kartika Yasa Putri | UX Researcher |
+| Hadi Noerddien Jayanto | Data Engineer |
 
-1. Git Clone 
-2. Composer Update 
-3. cp .env.example .env (changes database) 
-4. php artisan key:generate 
-5. php artisan migrate 
+How to Run Project
+ 
+1. composer Update 
+2. cp .env.example .env 
+3. php artisan key:generate 
+4. create database shoe_cleaning
+5. php artisan migrate
 6. php artisan serve
