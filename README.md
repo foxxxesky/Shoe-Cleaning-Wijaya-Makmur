@@ -1,5 +1,5 @@
 # Shoe Cleaning Website
-## Kelompok Wijaya Makmur
+## Wijaya Makmur Team
 
 | Nama | Role |
 | --- | --- |
