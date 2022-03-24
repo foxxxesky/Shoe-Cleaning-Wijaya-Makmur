@@ -1,5 +1,4 @@
-# Tugas Besar Web Application Development
-## Shoe Cleaning Website
+# Shoe Cleaning Website
 ## Kelompok Wijaya Makmur
 
 | Nama | Role |
